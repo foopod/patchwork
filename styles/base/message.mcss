@@ -1,4 +1,5 @@
 Message {
+  background: white
   display: flex
   flex-direction: column
   position: relative
@@ -8,10 +9,13 @@ Message {
   (highlight) {
     border-radius: 3px
     padding: 0 2px
+    background-color: rgb(216, 179, 0)
+    color: white
   }
   header {
     font-size: 120%
     display: flex
+    margin: 15px 20px 0
     div.mini {
       flex: 1
     }
@@ -25,12 +29,16 @@ Message {
         }
       }
       div.main {
+        margin-left: 10px
         div.name {
           a {
             font-weight: bold
+            color: #444
           }
         }
-        margin-left: 10px
+        div.meta {
+          font-size: 90%
+        }
       }
     }
     div.meta {
@@ -40,6 +48,7 @@ Message {
       span.flag {
         width: 12px
         height: 12px
+        margin-top: -3px
         background-repeat: no-repeat
         background-position: center
         display: inline-block
@@ -47,20 +56,31 @@ Message {
         -unread {
           :after {
             content: ' unread'
+            font-size: 75%
+            color: #b7b7b7
           }
         }
         -new {
           :after {
             content: ' new'
+            font-size: 75%
+            color: #b7b7b7
           }
         }
         -new, -unread {
           width: auto
           height: auto
+          color: #ffcf04
           :before {
             content: '✸'
           }
+          :first-letter {
+            font-size: 100%
+          }
         }
+      }
+      a.channel {
+        font-weight: bold
       }
       em {
         display: inline-block
@@ -68,6 +88,14 @@ Message {
       }
       div.counts {
         font-size: 85%
+        a {
+          color: #757474
+        }
+        a.tags {
+          :hover {
+            color: #9544f9
+          }
+        }
         a.likes {
           ::before {
             content: '❤ '
@@ -79,12 +107,15 @@ Message {
         }
         a + a {
           padding-left: 5px
+          border-left: 2px solid #e6e6e6
         }
       }
       span.private {
         display: inline-block
         margin: -3px -3px 3px 4px
         position: relative
+        border: 4px solid #525050
+        background-color: #525050
         a {
           display: inline-block
           img {
@@ -112,8 +143,13 @@ Message {
           bottom: 0
           left: -1px
           font-size: 10px
+          font-weight: bold
           pointer-events: none
           white-space: nowrap
+          background: #525050
+          padding: 2px 4px 0 2px
+          border-top-right-radius: 5px
+          color: white
         }
       }
     }
@@ -121,6 +157,7 @@ Message {
   a.contentWarning {
     padding: 10px 20px
     font-weight: bold
+    background: #ddd
   }
   section.content {
     margin: 0
@@ -138,7 +175,12 @@ Message {
     display: block
     margin-top: -1px
     font-size: 9pt
+    border-top: 1px solid #eee
+    padding: 10px 15px
+    background: white
+    color: #8f8f8f
     :hover {
+      color: #777
       text-decoration: none
     }
   }
@@ -147,6 +189,7 @@ Message {
     padding: 0 20px
     div.expander {
       text-align: center
+      background-color: white
       -truncated {
         padding-top: 50px
         margin-top: -50px
@@ -161,8 +204,27 @@ Message {
     }
     div.actions {
       a.like {
+        :hover {
+          background: #e26ba4
+        }
         :before {
           content: "❤ "
+        }
+        -liked {
+          color: #c1005e;
+          background: #ffe4f1;
+          :before {
+            color: #ff2f92
+          }
+          :hover {
+            background: #606060;
+            color: white;
+          }
+        }
+      }
+      a.unlike {
+        :hover {
+          background: #959eab
         }
       }
       a.tag {
@@ -171,12 +233,16 @@ Message {
           -webkit-mask-box-image: svg(tag)
           height: 16px
           width: 16px
+          background-color: #656565
           display: inline-block
           vertical-align: bottom
           margin-right: 5px
         }
         :hover {
           background: #7f2fff
+          :before {
+            background-color: white
+          }
         }
       }
       a.reply {
@@ -191,8 +257,14 @@ Message {
         display: inline-block
         text-align: center
         transition: background-color 0.25s ease, color 0.25s ease
+        background: #f3f3f3
+        color: #656565
+        :before {
+          transition: background-color 0.25s ease
+        }
         :hover {
           color: white
+          background: #7dbd85
         }
         -right {
           float: right
@@ -241,6 +313,7 @@ Message {
   -mini {
     header {
       font-size: 100%
+      margin-bottom: 15px
       div.main {
         a.avatar {
           img {
@@ -296,6 +369,7 @@ Message {
   }
   -new, -unread {
     z-index: 1
+    box-shadow: 0 0 1px #ffc600
   }
   -hasContentWarning {
     section.content {

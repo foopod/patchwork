@@ -12,7 +12,9 @@ Markdown {
       background-image: svg(fetching)
       background-position: center
       background-repeat: no-repeat
+      background-color: #eee
       border-radius: 5px
+      border: 1px solid #ddd
       @svg fetching {
         width: 100px
         height: 20px
@@ -46,13 +48,18 @@ Markdown {
   (blockquote) {
     margin: 1rem 0
     padding: 5px 20px
+    border-left: 4px gainsboro solid
+    background: #fafafa
+    color: #7c7c7c
   }
   (hr) {
-    border: none
+    border-top: 1px solid #7e7e7e
   }
   (pre) {
     overflow: auto
     padding: 10px
+    background: #fbfbfb
+    border: 1px solid #eee
   }
   (ul) {
     (p) {
@@ -64,6 +71,13 @@ Markdown {
       max-height: none
     }
   }
-
+  (a) {
+    [href^="#"], [href^="@"], [href^="%"] {
+      border-bottom: 1px dotted #286bc3
+      :hover {
+        text-decoration: none
+      }
+    }
+  }
   word-break: break-word
 }

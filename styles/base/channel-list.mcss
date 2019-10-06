@@ -9,11 +9,21 @@ ChannelList {
     max-width: 250px
     background-repeat: no-repeat
     background-position: right
+    background-color: rgba(255, 255, 255, 0.66)
+    color: #333
+    transition: background-color 0.2s
+    :hover {
+      background-color: rgba(255, 255, 255, 0.4)
+    }
     -subscribed {
       background-image: svg(subscribed)
       border-left: 2px solid #51c067
       border-top-left-radius: 0
       border-bottom-left-radius: 0
+    }
+    -more {
+      color: #658aaf
+      background: rgb(255, 255, 255)
     }
     @svg subscribed {
       width: 20px
@@ -37,6 +47,7 @@ ChannelList {
       display: inline
       opacity: 0
       font-size: 80%
+      font-weight: bold
       background-color: rgb(112, 112, 112)
       transition: opacity 0.2s, background-color 0.4s
       padding: 9px 10px
@@ -45,6 +56,11 @@ ChannelList {
       border-radius: 5px
       border-left: 2px solid rgba(255, 255, 255, 0.9)
       text-decoration: none
+      -subscribe {
+        :hover {
+          background-color: rgb(112, 184, 212)
+        }
+      }
       -unsubscribe {
         :hover {
           background: rgb(212, 112, 112)

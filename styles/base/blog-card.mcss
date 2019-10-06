@@ -2,6 +2,11 @@ BlogCard {
   margin: 2rem 0
   display: flex
   flex-direction: column
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px
+  background-color: #fff
+  :hover {
+    background-color: #eff9fd
+  }
   div.content {
     display: flex
     flex-direction: row

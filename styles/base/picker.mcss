@@ -3,6 +3,35 @@ Picker {
     display: inline-block
     vertical-align: top
     border-radius: 5px
+    padding: 6px
+    background: #fff
+    margin: 3px
+    border: 1px solid #eee
+    color: #222
+    -add {
+      padding: 0 5px
+      font-size: 20px
+      border-color: #ddd
+      background: #eee
+    }
+    -self {
+      border-color: #b3d6bd
+      background: #fbfffb
+      color: #719a68
+    }
+    -assigned {
+      padding: 4px
+      border: 2px solid #ffa800
+      box-shadow: 0px 1px 2px #ff8d00
+      color: #a8702a
+      font-weight: bold
+    }
+    :hover {
+      border-color: #deb250
+      color: #deb250
+      background: #faf3e8
+      text-decoration: none
+    }
     img {
       width: 50px
       height: 50px
@@ -14,7 +43,13 @@ Picker {
     position: relative
     display: inline-block
     border-radius: 5px
+    border: 1px solid #ddd
+    background: #eee
+    margin: 3px
+    color: #222
+    vertical-align: top
     ::before {
+      top: 13px
       font-size: 30px
       content: '+'
       position: absolute
@@ -22,10 +57,17 @@ Picker {
       right: 0
       text-align: center
     }
+    :hover {
+      border-color: #deb250
+      color: #deb250
+      background: #faf3e8
+    }
     input[type="file"] {
       display: block
       cursor: pointer
       opacity: 0
+      height: 62px
+      width: 62px
     }
   }
 }

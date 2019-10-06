@@ -3,7 +3,10 @@ FeedEvent {
   flex-direction: column
   width: 100%
   margin: 25px auto
+  background: white
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1)
   -group {
+    background: #e8e8e8
     -expanded {
       a.expand {
         :before {
@@ -16,9 +19,14 @@ FeedEvent {
       padding: 10px
       text-align: center
       cursor: pointer
+      background: #f1f1f1
+      color: #1f1e1e
       :before {
         content: '▼ '
         font-size: 80%
+      }
+      :hover {
+        color: black
       }
     }
     div.items {
@@ -35,10 +43,16 @@ FeedEvent {
   div {
     flex: 1
   }
+  div + div {
+    border-top: 1px solid #eee
+  }
   a.full {
     display: block
     padding: 10px
     text-align: center
+    background: #f3fafd
+    border-top: 1px solid #bbc9d2
+    border-bottom: 1px solid #bbc9d2
   }
   div.replies {
     font-size: 100%
@@ -48,8 +62,12 @@ FeedEvent {
       flex: 1
       margin: 0
     }
+    div + div {
+      border-top: 1px solid #eee
+    }
   }
   div.meta {
     font-size: 100%
+    padding: 10px 20px
   }
 }

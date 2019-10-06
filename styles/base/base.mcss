@@ -7,6 +7,8 @@ html, body {
   overflow: hidden
   height: 100%
   -webkit-user-select: none
+  background: whitesmoke
+  color: #2b2b2b
 }
 
 body {
@@ -35,8 +37,9 @@ input {
 }
 a {
   text-decoration: none
+  color: #286bc3
   code {
-    color: #8ec1fc
+    color: #5eabff
   }
 }
 * + h1 {

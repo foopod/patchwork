@@ -6,6 +6,9 @@ ProfileHeader {
     width: 200px
     max-height: 200px
     margin-right: 20px
+    padding: 5px
+    background: white
+    box-shadow: 0 0 10px #aaa
     img {
       width: 100%
       order-radius: 5px
@@ -18,6 +21,12 @@ ProfileHeader {
       display: flex
       h1 {
         flex: 1
+      }
+      div.meta {
+        a {
+          margin-left: 5px
+          display: inline-block
+        }
       }
     }
     section {
@@ -34,6 +43,8 @@ ProfileHeader {
           margin: 2px 0
           font-size: 120%
           padding: 3px
+          color: #b3b3b3
+          background: white
         }
       }
       -distanceWarning {
@@ -44,6 +55,9 @@ ProfileHeader {
         padding: 8px
         margin: 5px 0
         font-size: 110%
+        border: 1px solid #ff6565;
+        background: #ffcccc;
+        color: #8a0000;
         a {
           :hover {
             text-decoration: none
@@ -59,22 +73,39 @@ ProfileHeader {
         }
       }
 
+      -ignore {
+        border: 1px solid #9965ff;
+        background: #daccff;
+        color: #4b008a;
+      }
+
       -blockWarning {
         padding: 8px
         margin: 5px 0
         font-size: 110%
+        border: 1px solid #ffc965
+        background: #ffebcc
+        color: #8a6800
         a {
+          color: #8a6800
           :hover {
             text-decoration: none
+            color: #da8701
+            
           }
         }
       }
       -mutualFriends {
         padding: 8px
         margin: 5px 0
+        background: #cfe9ff
+        font-size: 110%
+        font-weight: bold
         a {
+          color: #003a5d
           :hover {
             text-decoration: none
+            color: #0188da
           }
         }
       }

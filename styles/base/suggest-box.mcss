@@ -5,6 +5,8 @@ SuggestBox {
   z-index: 1000
   padding: .2rem .5rem
   margin-top: .35rem
+  background-color: #fff
+  border: 1px gainsboro solid
   ul {
     list-style-type: none
     padding: 0

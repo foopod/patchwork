@@ -1,9 +1,0 @@
-FeedMetaSummary {
-  div {
-    div {
-      strong {
-        color: white
-      }
-    }
-  }
-}

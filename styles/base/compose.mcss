@@ -5,6 +5,8 @@ Compose {
   width: 100%
   margin: 20px auto
   border-radius: 5px
+  border: 1px solid gainsboro
+  background: white
   textarea {
     resize: vertical
     font-size: 120%
@@ -12,6 +14,10 @@ Compose {
     border: none
     padding: 10px
     font-family: inherit
+    [disabled] {
+      color: #aaa
+      background: #ebf7ee
+    }
   }
   section.warning {
     overflow: hidden
@@ -41,13 +47,24 @@ Compose {
   }
   section.actions {
     display: flex
+    background: #fafafa
     flex-direction: row
     align-items: baseline
     justify-content: space-between
     border-bottom-left-radius: 5px
     border-bottom-right-radius: 5px
+    padding: .4rem
     input[type="file"] {
       color: transparent
+      padding: .5rem 0
+      width: 95px
+      height: 29px
+      :hover {
+        ::before {
+          color: black
+          border-color: #8b8b8b
+        }
+      }
       ::-webkit-file-upload-button {
         display: none
       }
@@ -58,6 +75,12 @@ Compose {
         white-space: nowrap
         border-radius: 5px
         -webkit-user-select: none
+        color: #5f5f5f
+        padding: 3px 6px
+        background: white
+        border: 2px solid #ddd
+        padding-top: .3rem
+        content: '📎 Attach File'
       }
       :active, :focus {
         outline: none
@@ -75,8 +98,22 @@ Compose {
       padding: 5px 6px;
     }
     (button) {
+      -private {
+        color: #8a6610
+        background: #f3e7ac
+        border-color: #f3e7ac
+        :hover {
+          color: white
+          background-color: #8a6610
+          border-color: #8a6610
+        }
+      }
       -clear {
         margin-right: 5px
+        background-color: #f3f3f3
+        :hover {
+          background-color: #b05b5b
+        }
       }
     }
   }
@@ -84,6 +121,7 @@ Compose {
     textarea {
       height: 200px
       transition: height .15s ease-out
+      border-bottom: 1px solid gainsboro
     }
     section.actions {
       display: flex

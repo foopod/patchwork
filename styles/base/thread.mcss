@@ -7,14 +7,22 @@ Thread {
     display: block
     padding: 10px
     text-align: center
+    background: #daecd6
+    border-top: 1px solid #bbc9d2
+    border-bottom: 1px solid #bbc9d2
+    color: #759053
   }
   div.messages {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1)
     div {
       -anchor {
         box-shadow: 0 0 10px #909090;
         position: relative;
         z-index: 1;
       }
+    }
+    div + div {
+      border-top: 1px solid #eee
     }
   }
 }

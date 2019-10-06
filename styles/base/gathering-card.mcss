@@ -1,4 +1,7 @@
 GatheringCard {
+  border: 1px solid #ddd
+  padding: 10px
+  margin-bottom: 10px
   a.image {
     display: block
     margin-top: 10px
@@ -30,6 +33,7 @@ GatheringCard {
       text-align: center
       margin-top: 10px
       button {
+        font-size: 100%
         :first-child {
           ::before {
             content: '✔ '
@@ -42,11 +46,21 @@ GatheringCard {
     }
   }
   div.title {
+    font-size: 200%
     button {
+      font-size: 50%
       float: right
       ::before {
         content: '✎ '
       }
     }
+  }
+  div.time {
+    color: #555
+    font-size: 120%
+  }
+  div.description {
+    border-top: 3px solid #ccc
+    margin-top: 10px
   }
 }

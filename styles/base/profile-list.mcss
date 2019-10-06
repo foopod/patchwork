@@ -9,6 +9,8 @@ ProfileList {
     text-decoration: none
     background-repeat: no-repeat
     background-position: right
+    background-color: rgba(255, 255, 255, 0.74)
+    transition: background-color 0.2s
     -more {
       padding-top: 10px
       padding-bottom: 10px
@@ -28,6 +30,9 @@ ProfileList {
       width: 20px
       height: 12px
       content: "<circle cx='6' stroke='none' fill='green' cy='6' r='5' />"
+      circle {
+        fill: green
+      }
     }
     @svg following {
       width: 20px
@@ -52,6 +57,9 @@ ProfileList {
       div.name {
         white-space: nowrap
         -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,1) 90%, rgba(0,0,0,0))
+        font-weight: bold
+        font-size: 110%
+        color: #636363
       }
     }
     div.progress {
@@ -100,6 +108,7 @@ ProfileList {
       padding-right: 10px
     }
     :hover {
+      background-color: rgba(255, 255, 255, 0.4)
       div.controls {
         opacity: 1
       }

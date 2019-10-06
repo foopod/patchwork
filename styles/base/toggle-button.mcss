@@ -5,6 +5,9 @@ ToggleButton {
   font-size: 13px
   cursor: pointer
   transition: background-color 0.25s ease, color 0.25s ease, background-image 0.25s ease
+  color: white
+  background-color: #848484
+  border: none
   -subscribe {
     :before {
       content: '★ '
@@ -22,7 +25,11 @@ ToggleButton {
       display: inline-block;
       content: ' ';
       margin-left: 3px;
-    }    
+      background-color: #EEE
+    }
+    :hover {
+      color: white
+    }
   }
   -unsubscribe {
     background-repeat: no-repeat
@@ -43,6 +50,7 @@ ToggleButton {
   }
 
   -blocking {
+    border: 0px
     margin-left: 5px
     :hover {
       background-color: #bd6363
@@ -50,6 +58,9 @@ ToggleButton {
   }
   -unblocking {
     margin-left: 5px
+    background-color: rgb(212, 112, 112)
+    color: white
+    border: 0px
     :hover {
       background-color: #bd6363
     }
@@ -62,10 +73,12 @@ ToggleButton {
   :hover {
     opacity: 1
     text-decoration: none
+    background-color: #585656
   }
   @svg subscribed {
     width: 20px
     height: 12px
+    content: "<circle cx='6' stroke='#FFF' fill='none' cy='6' r='5' /> <circle cx='6' cy='6' r='3' fill='#FFF'/>"
   }
   @svg dropArrow {
     width: 12px
