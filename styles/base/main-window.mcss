@@ -24,9 +24,9 @@ MainWindow {
     padding: 6px
     position: relative
     z-index: 100
-    background: #fff
+    background: var(--secondary-bg)
     border-bottom: 2px solid #e4edff
-    box-shadow: 0 0 3px #7f7f7f
+    box-shadow: 0 0 3px var(--shadow)
     span {
       input.search {
         padding: 4px 8px
@@ -34,7 +34,7 @@ MainWindow {
         border: 0 none
         font-size: 120%
         width: 180px
-        box-shadow: inset 0 0 0px 1px rgba(0,0,0,0.1)
+        box-shadow: inset 0 0 0px 1px var(--shadow)
         background: white
         color: #656565
         :focus {
@@ -145,7 +145,7 @@ MainWindow {
         visibility: hidden
       }
       div.info {
-        background: white
+        background: var(--secondary-bg)
         display: block
         position: absolute
         top: 0
@@ -203,7 +203,7 @@ MainWindow {
       animation: none
     }
     max-height: 100px
-    box-shadow: 0 0 3px #616161
+    box-shadow: 0 0 3px var(--shadow)
     overflow: hidden
     transition: 0.5s max-height
     animation: 0.5s slide-in
@@ -231,7 +231,7 @@ MainWindow {
   }
   div.bottom {
     position: relative
-    box-shadow: 0 0 3px #222
+    box-shadow: 0 0 3px var(--shadow)
     background: #222
     align-items: center
     display: flex

@@ -9,21 +9,21 @@ ChannelList {
     max-width: 250px
     background-repeat: no-repeat
     background-position: right
-    background-color: rgba(255, 255, 255, 0.66)
-    color: #333
+    background-color: var(--secondary-bg)
+    color: var(--main-font)
     transition: background-color 0.2s
     :hover {
-      background-color: rgba(255, 255, 255, 0.4)
+      background-color: var(--main-bg);
     }
     -subscribed {
       background-image: svg(subscribed)
-      border-left: 2px solid #51c067
+      border-left: 2px solid var(--primary)
       border-top-left-radius: 0
       border-bottom-left-radius: 0
     }
     -more {
-      color: #658aaf
-      background: rgb(255, 255, 255)
+      color: var(--secondary-font)
+      background:transparent;
     }
     @svg subscribed {
       width: 20px

@@ -1,0 +1,35 @@
+:root {
+  --main-bg: whitesmoke
+  --secondary-bg: white
+  --tertiary-bg: #e8e8e8
+
+  --main-font: #2b2b2b
+  --secondary-font: #658aaf
+  --main-a: #286bc3
+
+  --shadow: #b8b8b8
+
+  //info buttons
+  --button-bg: #ccc
+  --button-font: #5f5f5f
+  --button-hover: #959eab
+
+  //other buttons
+  --like: #e26ba4
+  --primary: #51c067
+  --tag: #7f2fff
+  --delete: #b05b5b
+  --light-text: white
+
+  //distance warning
+  --warning-border: #ffc965
+  --warning-bg: #ffebcc
+  --warning-font: #8a6800
+  --warning-title: #583805
+  --warning-hover-bg: #8a6610
+  --warning-hover-font: white
+
+  //blog card
+  --bc-bg: #fff
+  --bc-hover: #eff9fd
+}

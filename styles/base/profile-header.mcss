@@ -7,8 +7,8 @@ ProfileHeader {
     max-height: 200px
     margin-right: 20px
     padding: 5px
-    background: white
-    box-shadow: 0 0 10px #aaa
+    background: var(--secondary-bg)
+    box-shadow: 0 0 10px var(--shadow)
     img {
       width: 100%
       order-radius: 5px
@@ -44,7 +44,7 @@ ProfileHeader {
           font-size: 120%
           padding: 3px
           color: #b3b3b3
-          background: white
+          background: var(--secondary-bg)
         }
       }
       -distanceWarning {

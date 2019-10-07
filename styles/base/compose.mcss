@@ -5,8 +5,8 @@ Compose {
   width: 100%
   margin: 20px auto
   border-radius: 5px
-  border: 1px solid gainsboro
-  background: white
+  box-shadow: 0 2px 4px var(--shadow)
+  background: var(--secondary-bg)
   textarea {
     resize: vertical
     font-size: 120%
@@ -14,6 +14,10 @@ Compose {
     border: none
     padding: 10px
     font-family: inherit
+    color: var(--main-font)
+    :focus {
+      outline: 0
+    }
     [disabled] {
       color: #aaa
       background: #ebf7ee
@@ -47,7 +51,7 @@ Compose {
   }
   section.actions {
     display: flex
-    background: #fafafa
+    background: var(--tertiary-bg)
     flex-direction: row
     align-items: baseline
     justify-content: space-between
@@ -61,8 +65,7 @@ Compose {
       height: 29px
       :hover {
         ::before {
-          color: black
-          border-color: #8b8b8b
+          background-color: var(--main-bg)
         }
       }
       ::-webkit-file-upload-button {
@@ -75,10 +78,9 @@ Compose {
         white-space: nowrap
         border-radius: 5px
         -webkit-user-select: none
-        color: #5f5f5f
+        color: var(--main-font)
         padding: 3px 6px
-        background: white
-        border: 2px solid #ddd
+        background: var(--secondary-bg)
         padding-top: .3rem
         content: '📎 Attach File'
       }
@@ -88,31 +90,31 @@ Compose {
       }
     }
     input.contentWarning {
-      border: 2px solid #ddd;
-      border-radius: 3px;
+      border: none
+      border-radius: 3px
       flex: 1;
       font-size: 120%
-      margin-left: 5px;
-      margin-right: 5px;
-      min-width: 0;
-      padding: 5px 6px;
+      margin-left: 5px
+      margin-right: 5px
+      min-width: 0
+      padding: 5px 6px
+      background-color: var(--secondary-bg)
     }
     (button) {
       -private {
-        color: #8a6610
-        background: #f3e7ac
-        border-color: #f3e7ac
+        color: var(--warning-font)
+        background: var(--warning-bg)
+        border-color: var(--warning-border)
         :hover {
           color: white
-          background-color: #8a6610
-          border-color: #8a6610
+          background-color: var(--warning-hover-bg)
         }
       }
       -clear {
         margin-right: 5px
-        background-color: #f3f3f3
+        background-color: var(--secondary-bg)
         :hover {
-          background-color: #b05b5b
+          background-color: var(--delete)
         }
       }
     }
@@ -121,7 +123,6 @@ Compose {
     textarea {
       height: 200px
       transition: height .15s ease-out
-      border-bottom: 1px solid gainsboro
     }
     section.actions {
       display: flex

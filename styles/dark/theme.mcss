@@ -1,0 +1,64 @@
+:root {
+  --main-bg: #434141
+  --secondary-bg: #383838
+  --tertiary-bg: #585858
+
+  --main-font: #ccc
+  --secondary-font: #eee
+  --main-a: #757474
+
+  --shadow: transparent
+
+  //buttons
+  --button-bg: #2d2c2c
+  --button-font: #ccc
+  --button-hover: #434141
+
+  //other buttons
+  --like: #e26ba4
+  --primary: #51c067
+  --tag: #7f2fff
+  --delete: #b05b5b
+  --light-text: white
+
+  //warning
+  --warning-border: #ffba4e
+  --warning-bg: #5f410b
+  --warning-font: #ffdda7
+  --warning-title: white
+  --warning-hover-bg: #ceab2f
+  --warning-hover-font: white
+  
+
+  //blog card
+  --bc-bg: #444
+  --bc-hover: #555
+
+  
+}
+
+/* button {
+  -add {
+    color: white
+    background-color: #629a6e
+    border-color: #8ba289
+    :hover {
+      color: #6a7e6a
+      background-color: #ecfff0
+    }
+  }
+  -pub {
+    color: #aaa
+    background-color: #2d2c2c
+    :hover {
+      color: white
+      background-color: #45b754
+    }
+  }
+  -save {
+    :hover {
+      background-color: #45b754
+      color: white
+    }
+  }
+} */

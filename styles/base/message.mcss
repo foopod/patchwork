@@ -1,5 +1,5 @@
 Message {
-  background: white
+  background: var(--secondary-bg)
   display: flex
   flex-direction: column
   position: relative
@@ -177,7 +177,7 @@ Message {
     font-size: 9pt
     border-top: 1px solid #eee
     padding: 10px 15px
-    background: white
+    background: var(--secondary-bg)
     color: #8f8f8f
     :hover {
       color: #777
@@ -189,7 +189,7 @@ Message {
     padding: 0 20px
     div.expander {
       text-align: center
-      background-color: white
+      background-color: var(--secondary-bg)
       -truncated {
         padding-top: 50px
         margin-top: -50px
@@ -241,7 +241,7 @@ Message {
         :hover {
           background: #7f2fff
           :before {
-            background-color: white
+            background-color: var(--secondary-bg)
           }
         }
       }

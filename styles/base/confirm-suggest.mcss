@@ -2,7 +2,7 @@ ConfirmSuggest {
   position: fixed
   border: 1px solid #ddd
   z-index: 100
-  background: white
+  background: var(--secondary-bg)
   ul {
     margin: 0
     padding: 0

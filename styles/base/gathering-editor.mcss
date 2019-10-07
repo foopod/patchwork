@@ -2,7 +2,7 @@ GatheringEditor {
   display: flex
   flex-direction: column
   input.date {
-    background: white
+    background: var(--secondary-bg)
     font-size: 150%
     color: #333
     padding: 10px

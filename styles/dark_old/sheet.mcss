@@ -1,6 +1,6 @@
 Sheet {
   background: #434141
-  box-shadow: 0 0 40px black
+  box-shadow: 0 0 40px var(--shadow)
   border-bottom-left-radius: 3px
   border-bottom-right-radius: 3px
   -private {

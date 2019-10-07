@@ -4,16 +4,13 @@ button {
   border-radius: 3px
   font-size: 13px
   cursor: pointer
-  color: #5f5f5f
-  background: #ddd
+  color: var(--button-font)
+  background: var(--button-bg)
   transition: background-color 0.25s ease, color 0.25s ease
   :hover {
-    color: white
-    background-color: #959eab
-    border-color: #959eab
-  }
-  :focus {
-    outline: 1px dotted #959eab
+    color: var(--light-text)
+    background-color: var(--button-hover)
+    border-color: var(--button-hover)
   }
   :active {
     background-color: #959eab !important
@@ -22,40 +19,53 @@ button {
     color: #999797 !important
     background: #e3e2e2 !important
     border-color: #ddd !important
+    opacity: 0.5
   }
   -add {
     :hover {
-      border-color: #7dbd85
-      background-color: #7dbd85
+      border-color: var(--primary)
+      background-color: var(--primary)
     }
   }
   -pub {
-    color: white
-    background-color: #959ea9
-    border-color: #959ea9
+    color: var(--light-text)
+    background-color: var(--button-hover)
+    border-color: var(--button-hover)
+    border: 0
+    margin-top: 0
+    padding: 10px
+    transition: background-color 0.25s ease, color 0.25s ease
     :hover {
-      background-color: rgb(112, 184, 212)
-      border-color: rgb(112, 184, 212)
-      color: white
+      background-color: var(--primary)
+      border-color: var(--primary)
+      color: var(--light-text)
     }
   }
   -save {
-    color: white
-    background-color: #70b57d
-    border-color: #70b57d
+    color: var(--light-text)
+    background-color: var(--primary)
+    border-color: var(--primary)
+    opacity: 0.8
+    ::before {
+      content: '✔ '
+    }
     :active {
-      background-color: #59a066
+      background-color: var(--primary)
     }
     :hover {
-      background-color: #59a066
-      border-color: #59a066
-      color: white
+      background-color: var(--primary)
+      border-color: var(--primary)
+      opacity: 1
+      color: var(--light-text)
     }
   }
+  -cancel {
+    background: transparent
+  }
   -filterSelected {
-    color: white
-    background-color: #959eab
-    border-color: #959eab
+    color: var(--light-text)
+    background-color: var(--button-hover)
+    border-color: var(--button-hover)
   }
   -filterUnselected {
     background: none

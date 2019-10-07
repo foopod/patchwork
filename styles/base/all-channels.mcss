@@ -16,15 +16,15 @@ AllChannels {
     background-position: right
     overflow: hidden
     text-overflow: ellipsis
-    background-color: rgba(255, 255, 255, 0.66)
-    color: #333
+    background-color: var(--secondary-bg)
+    color: var(--main-font)
     transition: background-color 0.2s
     -subscribed {
       background-image: svg(subscribed)
       span.name {
         font-weight: bold
       }
-      border-left: 2px solid rgb(81, 192, 103)
+      border-left: 2px solid var(--primary)
       border-top-left-radius: 0
       border-bottom-left-radius: 0
     }
@@ -35,7 +35,7 @@ AllChannels {
     }
     :hover {
       text-decoration: none
-      background-color: rgba(255, 255, 255, 0.4)
+      background-color: var(--tertiary-bg)
       a {
         transition: opacity 0.05s
         opacity: 1
@@ -64,6 +64,11 @@ AllChannels {
       -unsubscribe {
         :hover {
           background-color: rgb(112, 184, 212)
+        }
+      }
+      -subscribe {
+        :hover {
+          background-color: #51c067
         }
       }
     }

@@ -3,8 +3,8 @@ AboutImage {
   width: 400px
   margin: 20px auto
   padding: 5px
-  background: white
-  box-shadow: 0 0 10px #aaa
+  background: var(--secondary-bg)
+  box-shadow: 0 0 10px var(--shadow)
   img {
     width: 100%
   }

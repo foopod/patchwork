@@ -4,7 +4,7 @@ Picker {
     vertical-align: top
     border-radius: 5px
     padding: 6px
-    background: #fff
+    background: var(--secondary-bg)
     margin: 3px
     border: 1px solid #eee
     color: #222

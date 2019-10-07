@@ -2,8 +2,8 @@ ImageInput {
   position: relative
   width: 200px
   padding: 5px
-  background: white
-  box-shadow: 0 0 10px #aaa
+  background: var(--secondary-bg)
+  box-shadow: 0 0 10px var(--shadow)
   transition: box-shadow 0.2s
   img {
     width: 100%

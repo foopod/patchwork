@@ -2,14 +2,14 @@ $distanceWarning {
   padding: 8px
   margin: 5px 0
   font-size: 110%
-  border: 1px solid #ffc965
-  background: #ffebcc
-  color: #8a6800
+  border: 1px solid var(--warning-border)
+  background: var(--warning-bg)
+  color: var(--warning-font)
   h1 {
     font-size: 120%
     font-weight: bold
     margin: 0
-    color: #583805
+    color: var(--warning-title)
   }
   p {
     margin: 0
