@@ -48,9 +48,8 @@ Markdown {
   (blockquote) {
     margin: 1rem 0
     padding: 5px 20px
-    border-left: 4px gainsboro solid
-    background: #fafafa
-    color: #7c7c7c
+    border-left: 4px solid var(--main-font)
+    background: var(--tertiary-bg)
   }
   (hr) {
     border-top: 1px solid #7e7e7e
@@ -58,8 +57,7 @@ Markdown {
   (pre) {
     overflow: auto
     padding: 10px
-    background: #fbfbfb
-    border: 1px solid #eee
+    background: var(--main-bg)
   }
   (ul) {
     (p) {

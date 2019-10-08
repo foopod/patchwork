@@ -13,7 +13,7 @@ ChannelList {
     color: var(--main-font)
     transition: background-color 0.2s
     :hover {
-      background-color: var(--main-bg);
+      background-color: var(--main-bg)
     }
     -subscribed {
       background-image: svg(subscribed)
@@ -23,7 +23,7 @@ ChannelList {
     }
     -more {
       color: var(--secondary-font)
-      background:transparent;
+      background:transparent
     }
     @svg subscribed {
       width: 20px

@@ -9,7 +9,7 @@ FeedMetaSummary {
     align-items: center
     border-radius: 3px
     padding: 5px
-    background: #353535
+    background: var(--tertiary-bg)
     margin: 5px
     white-space: nowrap
     overflow: hidden

@@ -10,9 +10,8 @@ Sheet {
   display: flex
   flex-direction: column
   z-index: 50
-  background: #f8f8f8
-  border: 2px solid #9c9a9a
   box-shadow: 0 0 40px var(--shadow)
+  background-color: var(--tertiary-bg)
   border-bottom-left-radius: 4px
   border-bottom-right-radius: 4px
   section {
@@ -33,7 +32,7 @@ Sheet {
     padding: 10px
     position: relative
     align-items: center
-    border-top: 1px solid #ddd
+    border-top: 1px solid var(--tertiary-bg)
     img {
       max-height: 24px
     }
@@ -48,13 +47,12 @@ Sheet {
   }
   -private {
     footer {
-      background-color: #fffbf4
+      background-color: var(--tertiary-bg)
     }
   }
   -public {
     footer {
-      border-color: #c7c3ff
-      background-color: #f4f4fd
+      background-color: var(--tertiary-bg)
     }
   }
 }

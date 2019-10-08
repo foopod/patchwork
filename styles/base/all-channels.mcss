@@ -58,7 +58,7 @@ AllChannels {
       padding: 9px 10px
       color: white
       margin: -8px -10px -8px 4px
-      border-radius: 5px;
+      border-radius: 5px
       border-left: 2px solid rgba(255, 255, 255, 0.9)
       text-decoration: none
       -unsubscribe {

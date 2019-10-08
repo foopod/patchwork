@@ -25,7 +25,6 @@ MainWindow {
     position: relative
     z-index: 100
     background: var(--secondary-bg)
-    border-bottom: 2px solid #e4edff
     box-shadow: 0 0 3px var(--shadow)
     span {
       input.search {
@@ -34,12 +33,13 @@ MainWindow {
         border: 0 none
         font-size: 120%
         width: 180px
-        box-shadow: inset 0 0 0px 1px var(--shadow)
-        background: white
-        color: #656565
+        background: var(--tertiary-bg)
         :focus {
           outline: 0
           box-shadow: inset 0 0 0px 1px #286bc3
+        }
+        ::placeholder {
+          color: var(--button-font)
         }
       }
     }
@@ -89,18 +89,15 @@ MainWindow {
         cursor: pointer
         margin-left: 8px
         text-decoration: none !important
-        background: #f3f3f3
-        color: #656565
+        background: var(--button-bg);
+        color: var(--main-font)
         :hover {
-          color: black
-          background: #e8e8e8
+          color: var(--main-font)
+          background: var(--tertiary-bg)
         }
         -selected {
-          color: black
-          background: #d2d2d2
-          :hover {
-            background: #d2d2d2
-          }
+          color: var(--light-text)
+          background: var(--button)
         }
         -drop {
           :after {
@@ -115,7 +112,7 @@ MainWindow {
             margin-right: -6px
             padding-left: 5px
             margin-bottom: -2px
-            border-left: 1px solid #d2d2d2
+            border-left: 1px solid var(--main-font)
           }
         }
         -add {
@@ -140,7 +137,7 @@ MainWindow {
       letter-spacing: 1px
       -webkit-app-region: drag
       position: relative
-      color: #757575
+      color: var(--secondary-font)
       span.title {
         visibility: hidden
       }

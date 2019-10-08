@@ -9,8 +9,8 @@ button {
   transition: background-color 0.25s ease, color 0.25s ease
   :hover {
     color: var(--light-text)
-    background-color: var(--button-hover)
-    border-color: var(--button-hover)
+    background-color: var(--button)
+    border-color: var(--button)
   }
   :active {
     background-color: #959eab !important
@@ -29,8 +29,8 @@ button {
   }
   -pub {
     color: var(--light-text)
-    background-color: var(--button-hover)
-    border-color: var(--button-hover)
+    background-color: var(--button)
+    border-color: var(--button)
     border: 0
     margin-top: 0
     padding: 10px
@@ -64,8 +64,8 @@ button {
   }
   -filterSelected {
     color: var(--light-text)
-    background-color: var(--button-hover)
-    border-color: var(--button-hover)
+    background-color: var(--button)
+    border-color: var(--button)
   }
   -filterUnselected {
     background: none

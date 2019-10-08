@@ -16,9 +16,9 @@ Thread {
     box-shadow: 0 2px 4px var(--shadow)
     div {
       -anchor {
-        box-shadow: 0 0 10px #909090;
-        position: relative;
-        z-index: 1;
+        box-shadow: 0 0 10px #909090
+        position: relative
+        z-index: 1
       }
     }
     div + div {

@@ -33,7 +33,7 @@ Message {
         div.name {
           a {
             font-weight: bold
-            color: #444
+            color: var(--main-font);
           }
         }
         div.meta {
@@ -89,25 +89,25 @@ Message {
       div.counts {
         font-size: 85%
         a {
-          color: #757474
+          color: var(--main-a)
         }
         a.tags {
           :hover {
-            color: #9544f9
+            color: var(--tag)
           }
         }
         a.likes {
           ::before {
             content: '❤ '
-            color: #ff2f92
+            color: var(--like);
           }
           :hover {
-            color: #ff2f92
+            color: var(--like);
           }
         }
         a + a {
           padding-left: 5px
-          border-left: 2px solid #e6e6e6
+          border-left: 1px solid var(--secondary-font)
         }
       }
       span.private {
@@ -157,7 +157,7 @@ Message {
   a.contentWarning {
     padding: 10px 20px
     font-weight: bold
-    background: #ddd
+    background: var(--delete)
   }
   section.content {
     margin: 0
@@ -211,14 +211,14 @@ Message {
           content: "❤ "
         }
         -liked {
-          color: #c1005e;
-          background: #ffe4f1;
+          color: #c1005e
+          background: #ffe4f1
           :before {
             color: #ff2f92
           }
           :hover {
-            background: #606060;
-            color: white;
+            background: #606060
+            color: white
           }
         }
       }
@@ -257,8 +257,8 @@ Message {
         display: inline-block
         text-align: center
         transition: background-color 0.25s ease, color 0.25s ease
-        background: #f3f3f3
-        color: #656565
+        background: var(--button-bg)
+        color: var(--button-font)
         :before {
           transition: background-color 0.25s ease
         }
@@ -311,6 +311,7 @@ Message {
     }
   }
   -mini {
+    background-color: var(--main-bg)
     header {
       font-size: 100%
       margin-bottom: 15px
@@ -369,7 +370,7 @@ Message {
   }
   -new, -unread {
     z-index: 1
-    box-shadow: 0 0 1px #ffc600
+    background-color: var(--tertiary-bg)
   }
   -hasContentWarning {
     section.content {

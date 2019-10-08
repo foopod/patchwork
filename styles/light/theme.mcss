@@ -12,7 +12,7 @@
   //info buttons
   --button-bg: #ccc
   --button-font: #5f5f5f
-  --button-hover: #959eab
+  --button: #959eab
 
   //other buttons
   --like: #e26ba4

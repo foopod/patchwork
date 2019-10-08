@@ -5,30 +5,26 @@ ToggleButton {
   font-size: 13px
   cursor: pointer
   transition: background-color 0.25s ease, color 0.25s ease, background-image 0.25s ease
-  color: white
-  background-color: #848484
+  color: var(--light-text)
+  background-color: var(--button)
   border: none
   -subscribe {
     :before {
       content: '★ '
     }
     :hover {
-      background-color: #45b754
-      color: white
+      background-color: var(--primary)
     }
   }
   -drop {
     :after {
       -webkit-mask-box-image: svg(dropArrow)
-      width: 10px;
-      height: 6px;
-      display: inline-block;
-      content: ' ';
-      margin-left: 3px;
-      background-color: #EEE
-    }
-    :hover {
-      color: white
+      width: 10px
+      height: 6px
+      display: inline-block
+      content: ' '
+      margin-left: 3px
+      background-color: var(--light-text)
     }
   }
   -unsubscribe {
@@ -37,15 +33,14 @@ ToggleButton {
     background-image: svg(subscribed)
     padding-right: 25px
     :hover {
-      background-color: #b74945
-      color: white
+      background-color: var(--delete)
     }
   }
   
   -options {
     margin-left: 5px
     :hover {
-      background-color: #bd881c
+      background-color: var(--warning-border)
     }
   }
 
@@ -53,16 +48,16 @@ ToggleButton {
     border: 0px
     margin-left: 5px
     :hover {
-      background-color: #bd6363
+      background-color: var(--delete)
     }
   }
   -unblocking {
     margin-left: 5px
-    background-color: rgb(212, 112, 112)
+    background-color: var(--delete)
     color: white
     border: 0px
     :hover {
-      background-color: #bd6363
+      background-color: var(--delete)
     }
   }
   -disabled {
@@ -73,7 +68,7 @@ ToggleButton {
   :hover {
     opacity: 1
     text-decoration: none
-    background-color: #585656
+    background-color: var(--button-bg)
   }
   @svg subscribed {
     width: 20px

@@ -11,7 +11,7 @@ SuggestBox {
     list-style-type: none
     padding: 0
     li.channel {
-      padding: 3px;
+      padding: 3px
       -subscribed {
         strong {
           font-weight: bold
@@ -37,7 +37,7 @@ SuggestBox {
         padding: .2rem
       }
       strong {
-        font-size: 110%;
+        font-size: 110%
         flex-grow: 1
         margin-left: .5rem
         font-weight: 300

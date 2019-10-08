@@ -92,7 +92,7 @@ Compose {
     input.contentWarning {
       border: none
       border-radius: 3px
-      flex: 1;
+      flex: 1
       font-size: 120%
       margin-left: 5px
       margin-right: 5px
