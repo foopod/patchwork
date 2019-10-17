@@ -158,6 +158,7 @@ Message {
     padding: 10px 20px
     font-weight: bold
     background: var(--delete)
+    color: var(--main-font)
   }
   section.content {
     margin: 0
@@ -194,6 +195,7 @@ Message {
         padding-top: 50px
         margin-top: -50px
         -webkit-mask-image: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0))
+        margin-bottom: 6px
         a {
           :before {
             content: '▼ '

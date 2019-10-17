@@ -30,5 +30,5 @@ const theme = (themeName) => {
 module.exports = {
   light: theme('light'),
   dark: theme('dark'),
-  darkold: theme('dark_old')
+  solarized: theme('solarized')
 }

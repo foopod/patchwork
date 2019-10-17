@@ -1,18 +1,18 @@
 :root {
-  --main-bg: #434141
-  --secondary-bg: #383838
-  --tertiary-bg: #585858
+  --main-bg: #073642
+  --secondary-bg: #002b36
+  --tertiary-bg: #073642
 
-  --main-font: #ccc
-  --secondary-font: #eee
-  --main-a: white
+  --main-font: #93a1a1
+  --secondary-font: #859900
+  --main-a: #268bd2
 
   --shadow: black
 
   //buttons
-  --button-bg: #2d2c2c
-  --button-font: #ccc
-  --button: #222
+  --button-bg: #eee8d5
+  --button-font: #073642
+  --button: #cb4b16
 
   //other buttons
   --like: #e26ba4

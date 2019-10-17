@@ -1,4 +1,14 @@
 MainWindow {
+  -linux, -win32 {
+    (div) {
+      ::-webkit-scrollbar {
+        width: 12px
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--button-bg)
+      }
+    }
+  }
   display: flex
   flex: 1
   flex-direction: column
